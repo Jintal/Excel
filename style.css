@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*********************** Page *********************************/
+
+.page-actions-cont {
+    height: 3rem;
+    background-color: #218c74;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 1rem;
+}
+
+.page-action {
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-page-action {
+    background-color: #f1f2f6;
+    color: #218c74;
+
+}
+
+/*********************** CellProps ****************************/
+
+.cellprop-actions-cont {
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.cellprop-actions-cont > *{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.cellprop-actions-cont > select {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.cellprop-actions-cont > select:hover{
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    cursor: pointer;
+}
+
+
+.font-family-prop {
+    padding: 0.2rem;
+}
+
+.font-size-prop {
+    padding: 0.2rem;
+}
+
+.color-prop {
+    position: relative;
+}
+
+.color-prop > input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.color-prop > input:hover {
+    cursor: pointer;
+}
+
+/*********************** Formula ****************************/
+
+.formula-actions-cont {
+    height: 3rem;
+    background-color: #ecf0f1;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.formula-actions-cont > * {
+    display: inline-block;
+    height: 1.5rem;
+}
+
+.formula-actions-cont > input {
+    border: none;
+    outline: none;
+}
+
+.address-bar {
+    width: 5rem;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.formula-icon {
+    width: 1.5rem;
+}
+
+.formula-bar {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+/*********************** Sheets ****************************/
+
+.sheet-actions-cont {
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.sheet-actions-cont > * {
+    display: inline-block;
+}
+
+.sheet-add-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+}
+
+.sheets-folder-cont {
+    height: 80%;
+    width: calc(100vw - 2vw);
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.sheet-folder {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration-thickness: 0.2rem;
+}
+
+.sheet-content {
+    width: 5rem;
+    text-align: center;
+}
+
+.sheet-folder:hover{
+    cursor: pointer;
+}
+
+/*********************** Grid ****************************/
+
+.grid-cont {
+    height: calc(100vh - 3rem - 3rem - 3rem - 3rem);
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+}
+
+.top-left-dummy-box {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(119, 113, 113); 
+    position: fixed;
+    z-index: 2;
+}
+
+.address-col-cont {
+    position: sticky;
+    top: 2rem;
+    left: 0;
+}
+
+.address-col {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #bfc3c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cells-cont {
+    position: absolute;
+    top: 0;
+    left:2rem;
+}
+
+.address-row-cont {
+    height: 2rem;
+    display: flex;
+    position: sticky;
+    top: 0rem;
+    left: 2rem;
+}
+
+.address-row {
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #bfc3c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-cont {
+    display: flex;
+}
+
+.cell {
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #bfc3c9;
+    outline: none;
+    overflow: hidden;
+    font-family: fantasy;
+}
